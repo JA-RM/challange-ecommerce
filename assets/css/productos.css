@@ -1,0 +1,73 @@
+:root{
+    --cardWidth: 12.5rem;
+    --cardHeight: 15.1rem;
+    --cardMargin: 0.62rem;
+}
+
+.categoria{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+.texto__categoria{
+    width: 85%;
+    height: 2.37rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem;
+}
+.texto__categoria h2{
+    font-size: 32px;
+}
+.texto__categoria img{
+    width: 16px;
+    height: 16px;
+    padding-right: 3.75rem;
+}
+.texto__categoria a{
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--fuente-producto-azul);
+}
+.productos{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.card{
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    box-sizing: border-box;
+}
+.card img{
+    width: 11rem;
+    height: 10.8rem;
+    display: flex;
+}
+.card h3{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--fuente-producto);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card p{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--fuente-producto);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card a{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--fuente-producto--azul);
+    margin-top: 10px;
+}

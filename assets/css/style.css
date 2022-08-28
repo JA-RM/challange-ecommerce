@@ -1,0 +1,350 @@
+:root {
+    --raleway: 'raleway';
+    --background-blanco: #f5f5f5;
+    --fuente-barra: #A2A2A2;
+    --fuente-banner: #FFFFFF;
+    --fuente-productos: #464646;
+    --fuente-productos-azul: #2A7AE4;
+}
+
+::placeholder{
+    font-size: 20px;
+}
+
+body{
+    font-family: 'raleway';
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecera__container{
+    width: 85%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:  .85rem;
+    padding-bottom: .85rem;
+}
+.cabecera__logo{
+    width: 3.3rem;
+}
+.busqueda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50%;
+}
+.busqueda__campo{
+    padding: .75rem 15rem 0.75rem 0.750rem;
+    border-radius: 1.25rem;
+    border: none;
+    background-color: var(--background-blanco);
+}
+.busqueda__campo:focus{
+    outline: none;
+}
+.login{
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 16px;
+    color: var(--fuente-productos-azul);
+    background-color: white;
+    border: 2px solid var(--fuente-productos-azul);
+}
+.contenido__container{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/img/banner-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: static;
+    justify-content: center;
+}
+.texto h1{
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--fuente-banner);
+    margin-top:80px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.texto p{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--fuente-banner);
+    margin-left: 7.5rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+.boton{
+    width: 6.6rem;
+    height: 3.1rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--fuente-productos-azul);
+    color: #FFFFFF;
+    margin-left: 7.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    border: none;
+}
+.boton-add{
+    height: 3.1rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--fuente-productos-azul);
+    color: #FFFFFF;
+    margin-left: 7.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    border-radius: 15%;
+}
+.button__busqueda{
+    margin-left: -50px;
+    border: none;
+    opacity: 50;
+    background-color: var(--background-blanco);
+}
+.button__busqueda--login{
+    display: none;
+}
+
+.contacto{
+    width: 100%;
+    background-color: #d5e0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7.25rem;
+}
+.contacto__img{
+    width: 3.3rem;
+    padding: 5rem;
+    margin-top: -8rem;
+}
+.contacto__a_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: black;
+    margin-top: -8rem;
+    padding: 5rem;
+}
+.contacto__a{
+    color: black;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.contacto__form{
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5rem;
+}
+
+.contacto__form__input{
+    width: 500px;
+    height: 50px;
+    margin: 1rem 0;
+    border: none;
+}
+.contacto__form__input__msg{
+    width: 500px;
+    height: 100px;
+    margin: 1rem 0;
+    border: none;
+
+}
+
+.contacto__form__boton{
+    width: 10.6rem;
+    height: 2.1rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--fuente-productos-azul);
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: none;
+}
+.contacto__form__boton--eliminar{
+    width: 10.6rem;
+    height: 2.1rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--fuente-productos-azul);
+    background-color: #e42121;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: none;
+}
+.contacto__form__boton--editar{
+    width: 10.6rem;
+    height: 2.1rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--fuente-productos-azul);
+    background-color: #227a10;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}
+.contacto__form__boton--index{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_p{
+    margin-top: -0.8rem;
+}
+.form__login{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.div_form_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d1ddf3;
+}
+.form__login__input{
+    width: 500px;
+    height: 50px;
+    margin: 1rem 0;
+    border: none;
+    background-color: #FFFFFF;
+}
+.form__login__boton{
+    width: 500px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--fuente-productos-azul);
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    border: none;
+    text-align: center;
+}
+
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .busqueda{
+        margin-right: 10%;
+    }
+
+    .busqueda__campo{
+        display: none;
+    }
+    .texto h1{
+        font-size: 22px;
+        margin-left: 1rem;
+    }
+    .texto p{
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+    .login{
+        width: 6rem;
+    }
+    .consolas{
+        margin-left: 1rem;
+        width: 7rem;
+        height: 2rem;
+        font-size: 14px;
+        text-align: center;
+    }
+    .button__busqueda{
+        display: none;
+    }
+    .button__busqueda--login{
+        display: inline;
+        background-color: #FFFFFF;
+        border: none;
+        margin-left: 0.62rem;
+    }
+    .cabecera__container{
+        width: 90%;
+    }
+    .cabecera__logo{
+        width: 7.5rem;
+    }
+    .contacto{
+        width: 100%;
+        background-color: #d5e0f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7.25rem;
+    }
+    .contacto__img{
+        width: 3.3rem;
+        padding: 5rem;
+        margin-top: -3rem;
+    }
+    .contacto__form{
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .contacto__form__input{
+        width: 300px;
+        height: 100px;
+        margin: 1rem 0;
+        border: none;
+    }
+    .contacto__form__input__msg{
+        width: 300px;
+        height: 100px;
+        margin: 1rem 0;
+        border: none;
+    
+    }
+    
+    .contacto__form__boton{
+        width: 10.6rem;
+        height: 2.1rem;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: var(--fuente-productos-azul);
+        color: #FFFFFF;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        border: none;
+    }
+    ::placeholder{
+        font-size: 20px;
+    }
+
+}

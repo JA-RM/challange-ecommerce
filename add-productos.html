@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Ecommerce</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera__container">
+            <img class="cabecera__logo" src="./assets/img/Logo.png" alt="">
+            <div class="busqueda">
+                <form action=""></form>
+                <input type="search" class="busqueda__campo" placeholder="¿Qué deseas buscar?">
+                <button class="button__busqueda"><img src="./assets/img/Vector.png" alt=""></button>
+            </div>
+            <a href="login.html"><button class="login">Login</button></a>
+            <button class="button__busqueda--login"><img src="./assets/img/Vector.png" alt=""></button>
+        </div>
+    </header>
+    <main>
+        <section class="div_form_login">
+            <form  class="form__login" data-form>
+            <h1 class="form__login__titulo">Agregar nuevo producto</h1>
+            <input class="form__login__input" type="text" placeholder="Url del Producto" required data-url>
+            <input class="form__login__input" type="text" placeholder="Nombre del Producto" required  data-nombre>
+            <input class="form__login__input" type="text" placeholder="Descripcion del Producto" required data-descripcion>
+            <button type="replace" class="form__login__boton" data-btn>Agregar Producto</button>
+            </form>
+        </section>
+        <section class="contacto">
+            <img class="contacto__img" src="./assets/img/Logo.png" alt="">
+            <div class="contacto__a_div">
+                <a class="contacto__a" href="">Quienes somos</a>
+                <a class="contacto__a" href="">Politica de privacidad</a>
+                <a class="contacto__a" href="">Programa de fidelidad</a>
+                <a class="contacto__a" href="">Nuestras Tiendas</a>
+                <a class="contacto__a" href="">Franquicias</a>
+                <a class="contacto__a" href="">Anuncie Aquí</a>
+            </div>
+            <div class="contacto__form">
+                <form class="contacto__form" action="">Contáctenos
+                    <input class="contacto__form__input" type="text" placeholder="Nombre">
+                    <input class="contacto__form__input__msg" type="text" placeholder="Escribe tú mensaje">
+                    <button class="contacto__form__boton"> Enviar Mensaje</button>
+                </form>
+
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer">
+            <p> Desarrollado por Soft</p>
+            <p class="footer_p"> &copy 2022</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./controllers/crear.productos.js"></script>
+</body>
+</html>
